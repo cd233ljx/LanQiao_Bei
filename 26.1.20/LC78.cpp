@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// ??1：递归回溯
+// 1：递归回溯
 void backtrack(int i, vector<int> &nums, vector<int> &cur, vector<vector<int>> &ans)
 {
     if (i == nums.size())
@@ -11,10 +11,10 @@ void backtrack(int i, vector<int> &nums, vector<int> &cur, vector<vector<int>> &
         return;
     }
 
-    // 不??
+    // 不选
     backtrack(i + 1, nums, cur, ans);
 
-    // ??
+    // 选
     cur.push_back(nums[i]);
     backtrack(i + 1, nums, cur, ans);
     cur.pop_back();
@@ -27,7 +27,7 @@ vector<vector<int>> subsets_DiGui(vector<int> &nums)
     return ans;
 }
 
-// ??2：二进制枚举
+// 2：二进制枚举
 vector<vector<int>> subsets_01(vector<int> &nums)
 {
     vector<vector<int>> ans;

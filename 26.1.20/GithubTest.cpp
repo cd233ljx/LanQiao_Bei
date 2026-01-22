@@ -6,5 +6,6 @@ int main()
     cout << "测试分支";
     cout << "测试分支2";
     cout << "测试分支3,进入cd分支!";
+    cout << "测试平板外接";
     return 0;
 }

@@ -6,6 +6,7 @@
 .cph/
 
 #输出
+build/
 *.exe
 *.o
 *.out

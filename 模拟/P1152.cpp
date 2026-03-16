@@ -42,7 +42,7 @@ int main()
         }
             cnt++;
     }
-    cout << "jolly";
+    cout << "Jolly";
 
     return 0;
 }

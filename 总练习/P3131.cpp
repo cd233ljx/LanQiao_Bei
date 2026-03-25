@@ -3,6 +3,7 @@ using namespace std;
 typedef long long LL;
 
 const int N = 5e4 + 10;
+//前缀和-未优化
 LL sum[N];
 int n;
 LL ret = 0;
@@ -13,9 +14,8 @@ int main()
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
-        int t;
-        cin >> t;
-        sum[i] += sum[i-1] + t;
+        cin >> sum[i];
+        sum[i] += sum[i-1];
     }
 
     for (int d = n; d > 0; d--)
@@ -36,3 +36,4 @@ int main()
 
     return 0;
 }
+
